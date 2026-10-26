@@ -1,0 +1,6 @@
+{
+  "name": "Bengkel Las Bercahaya",
+  "description": "Website resmi Bengkel Las Bercahaya Jakarta Selatan - Solusi jasa pengelasan profesional, kanopi, pagar, tangga besi, dan teralis berkualitas tinggi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
