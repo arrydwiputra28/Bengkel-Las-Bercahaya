@@ -5,6 +5,7 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
+    base: '/Bengkel-Las-Bercahaya/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
