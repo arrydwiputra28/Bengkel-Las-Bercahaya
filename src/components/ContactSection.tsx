@@ -53,7 +53,7 @@ export default function ContactSection() {
               Alamat
             </h3>
             <p className="text-slate-600 leading-relaxed text-sm sm:text-base font-medium">
-              Petukangan Utara - Jakarta Selatan
+              Kreo - Kota Tangerang
             </p>
             <p className="text-xs text-slate-400 mt-1">
               Melayani area Jabodetabek
@@ -90,10 +90,10 @@ export default function ContactSection() {
               Email
             </h3>
             <a
-              href="mailto:tutiendah.blc@gmail.com.com"
+              href="mailto:tutiendah.blc@gmail.com"
               className="text-slate-600 hover:text-indigo-600 font-medium text-base transition-colors"
             >
-              info@bengkellasbercahaya.com
+              tutiendah.blc@gmail.com
             </a>
             <p className="text-xs text-slate-400 mt-1">
               Surat penawaran & kerja sama proyek
@@ -126,7 +126,7 @@ export default function ContactSection() {
 
             <iframe
               title="Peta Lokasi Bengkel Las Bercahaya"
-              src={"https://google.com"}
+              src={"https://maps.app.goo.gl/w5pGn4DHRufFJ5JM6"}
               className="w-full flex-1 min-h-[350px] border-0"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
