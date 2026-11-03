@@ -126,7 +126,7 @@ export default function ContactSection() {
 
             <iframe
               title="Peta Lokasi Bengkel Las Bercahaya"
-              src={"https://maps.app.goo.gl/w5pGn4DHRufFJ5JM6"}
+              src="https://google.com"
               className="w-full flex-1 min-h-[350px] border-0"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
