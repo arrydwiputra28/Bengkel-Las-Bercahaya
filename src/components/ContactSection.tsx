@@ -115,7 +115,7 @@ export default function ContactSection() {
                 </span>
               </div>
               <a
-                href="https://maps.google.com/?q=Petukangan+Utara+Pesanggrahan+Jakarta+Selatan"
+                href="https://maps.app.goo.gl/w5pGn4DHRufFJ5JM6"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-xs text-blue-600 font-semibold hover:underline"
@@ -126,7 +126,7 @@ export default function ContactSection() {
 
             <iframe
               title="Peta Lokasi Bengkel Las Bercahaya"
-              src={BRAND_INFO.mapsEmbedUrl}
+              src={"https://google.com"}
               className="w-full flex-1 min-h-[350px] border-0"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
