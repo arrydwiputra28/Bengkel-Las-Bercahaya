@@ -92,7 +92,7 @@ export default function App() {
             Punya ide ukuran custom untuk rumah atau kandang peliharaan Anda? Diskusikan rencana anggaran Anda bersama tim ahli kami langsung lewat obrolan WhatsApp.
           </p>
           <a 
-            href="https://wa.me..." 
+            href="https://wa.me/6287881947001" 
             target="_blank" 
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center bg-emerald-500 hover:bg-emerald-600 text-white font-bold px-8 py-4 rounded-full shadow-lg transition-transform duration-200 hover:-translate-y-0.5 text-base md:text-lg gap-2"
