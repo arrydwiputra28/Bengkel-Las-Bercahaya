@@ -124,13 +124,13 @@ export default function ContactSection() {
               </a>
             </div>
 
-            <iframe
-              title="Peta Lokasi Bengkel Las Bercahaya"
-              src="https://www.google.com/maps/embed?pb=KODE_EMBED_MAPS"
-              className="w-full flex-1 min-h-[350px] border-0"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
+           <iframe
+  title="Peta Lokasi Bengkel Las Bercahaya"
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.1605726611556!2d106.73710097090911!3d-6.242558177619546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1688590811b%3A0x67fd6877d8a8db4e!2sBengkel%20Las%20Bercahaya!5e0!3m2!1sid!2sid!4v1793707452644!5m2!1sid!2sid"
+  className="w-full flex-1 min-h-[350px] border-0"
+  loading="lazy"
+  referrerPolicy="no-referrer-when-downgrade"
+/>
           </div>
 
           {/* Quick Consultation Form */}
