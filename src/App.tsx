@@ -2,83 +2,135 @@ import React from 'react';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-800 antialiased font-['Plus_Jakarta_Sans']">
+    <div style={{ 
+      minHeight: '100vh', 
+      backgroundColor: '#f8fafc', 
+      color: '#334155', 
+      fontFamily: '"Plus Jakarta Sans", sans-serif',
+      margin: 0,
+      padding: 0
+    }}>
       {/* HERO SECTION */}
-      <header className="bg-gradient-to-br from-slate-900 via-slate-800 to-indigo-950 text-white py-16 px-4 text-center relative overflow-hidden">
-        <div className="max-w-3xl mx-auto flex flex-col items-center">
-          {/* Logo Bengkel Las Bercahaya */}
+      <header style={{ 
+        background: 'linear-gradient(135deg, #0f172a 0%, #1e293b 100%)', 
+        color: '#ffffff', 
+        padding: '60px 20px', 
+        textAlign: 'center' 
+      }}>
+        <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+          {/* LOGO BENGKEL LAS BERCAHAYA */}
           <img 
-            src="https://res.cloudinary.com/dozvwz4qd/image/upload/v1781977498/photo_2026_06_21_00_38_11.webp" 
+            src="https://cloudinary.com" 
             alt="Logo Bengkel Las Bercahaya" 
-            className="w-48 md:w-64 h-auto object-contain mb-6 drop-shadow-[0_5px_15px_rgba(245,158,11,0.3)]"
+            style={{ width: '220px', height: 'auto', marginBottom: '20px', borderRadius: '8px' }}
           />
-          <h1 className="text-3xl md:text-5xl font-extrabold text-amber-500 mb-4 tracking-tight">
+          <h1 style={{ fontSize: '2.5rem', color: '#f59e0b', margin: '0 0 10px 0', fontWeight: '800' }}>
             Bengkel Las Bercahaya
           </h1>
-          <p className="text-lg md:text-xl text-slate-300 max-w-2xl font-light">
-            Solusi Pengelasan Profesional & Konstruksi Besi Berkualitas Sejak Tahun 2000 untuk Area Jakarta dan Sekitarnya.
+          <p style={{ fontSize: '1.2rem', color: '#cbd5e1', margin: 0, fontWeight: '300' }}>
+            Solusi Pengelasan Profesional &amp; Konstruksi Besi Berkualitas Sejak Tahun 2000
           </p>
         </div>
       </header>
 
-      {/* MAIN CONTAINER */}
-      <main className="max-w-6xl mx-auto px-4 py-12">
+      {/* MAIN CONTENT */}
+      <main style={{ maxWidth: '1100px', margin: '40px auto', padding: '0 20px' }}>
         
         {/* TENTANG KAMI */}
-        <section className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 mb-12 text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4">Tentang Kami</h2>
-          <p className="text-slate-600 leading-relaxed max-w-3xl mx-auto">
+        <section style={{ 
+          backgroundColor: '#ffffff', 
+          padding: '30px', 
+          borderRadius: '16px', 
+          boxShadow: '0 4px 6px -1px rgba(0,0,0,0.05)', 
+          textAlign: 'center',
+          marginBottom: '40px',
+          border: '1px solid #f1f5f9'
+        }}>
+          <h2 style={{ color: '#0f172a', marginBottom: '15px', fontSize: '1.8rem' }}>Tentang Kami</h2>
+          <p style={{ color: '#64748b', lineHeight: '1.7', maxWidth: '800px', margin: '0 auto' }}>
             Kami melayani pengerjaan berbagai macam produk berbahan besi, baja ringan, dan stainless steel. Berbekal pengalaman lebih dari dua dekade, kami menjamin hasil kerja yang presisi, material kokoh, finishing rapi, dan pemasangan yang tepat waktu.
           </p>
         </section>
 
         {/* PRODUK UNGGULAN & GALERI */}
-        <section className="mb-12">
-          <h2 className="text-2xl md:text-3xl font-bold text-slate-900 text-center mb-8">Produk & Layanan Kami</h2>
+        <section style={{ marginBottom: '40px' }}>
+          <h2 style={{ color: '#0f172a', textAlign: 'center', marginBottom: '30px', fontSize: '1.8rem' }}>Produk &amp; Layanan Kami</h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div style={{ 
+            display: 'flex', 
+            flexWrap: 'wrap', 
+            gap: '20px',
+            justifyContent: 'center'
+          }}>
             {/* Kartu Produk 1 (Dengan Foto Kandang Catio) */}
-            <div className="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden flex flex-col">
-              <div className="h-64 overflow-hidden relative bg-slate-200">
+            <div style={{ 
+              backgroundColor: '#ffffff', 
+              borderRadius: '16px', 
+              boxShadow: '0 4px 6px -1px rgba(0,0,0,0.05)', 
+              overflow: 'hidden',
+              width: '320px',
+              border: '1px solid #f1f5f9',
+              display: 'flex',
+              flexDirection: 'column'
+            }}>
+              <div style={{ height: '220px', overflow: 'hidden', backgroundColor: '#e2e8f0' }}>
                 <img 
-                  src="https://res.cloudinary.com/dozvwz4qd/image/upload/v1781977498/photo_2026_06_21_00_38_11.webp" /* Menggunakan gambar produk catio outdoor besi Anda */
+                  src="https://cloudinary.com" 
                   alt="Kandang Besi Catio Outdoor" 
-                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                  style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                 />
               </div>
-              <div className="p-6 flex-1 flex flex-col">
-                <span className="text-xs font-bold tracking-wider text-indigo-600 uppercase mb-2">Spesialisasi Baru</span>
-                <h3 className="text-xl font-bold text-slate-900 mb-2">Kandang Catio & Avuary</h3>
-                <p className="text-slate-600 text-sm leading-relaxed flex-1">
-                  Pembuatan kandang hewan outdoor skala besar (Catio) dengan rangka besi anti-karat bermutu tinggi, kawat ram tebal, dan tingkat keamanan ekstra untuk hewan peliharaan Anda.
+              <div style={{ padding: '20px', flex: 1 }}>
+                <span style={{ fontSize: '0.75rem', fontWeight: 'bold', color: '#4f46e5', textTransform: 'uppercase' }}>Spesialisasi</span>
+                <h3 style={{ fontSize: '1.3rem', color: '#0f172a', margin: '5px 0 10px 0' }}>Kandang Catio &amp; Avuary</h3>
+                <p style={{ color: '#64748b', fontSize: '0.9rem', lineHeight: '1.6' }}>
+                  Pembuatan kandang hewan outdoor skala besar (Catio) dengan rangka besi anti-karat bermutu tinggi, kawat ram tebal, dan tingkat keamanan ekstra.
                 </p>
               </div>
             </div>
 
             {/* Kartu Produk 2 */}
-            <div className="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden flex flex-col">
-              <div className="h-64 bg-slate-800 flex items-center justify-center p-6">
-                <div className="text-center text-amber-500 font-bold text-xl">Spesialis Kanopi & Rangka</div>
+            <div style={{ 
+              backgroundColor: '#ffffff', 
+              borderRadius: '16px', 
+              boxShadow: '0 4px 6px -1px rgba(0,0,0,0.05)', 
+              overflow: 'hidden',
+              width: '320px',
+              border: '1px solid #f1f5f9',
+              display: 'flex',
+              flexDirection: 'column'
+            }}>
+              <div style={{ height: '220px', backgroundColor: '#1e293b', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#f59e0b', fontWeight: 'bold', fontSize: '1.2rem', padding: '20px', textAlign: 'center' }}>
+                Spesialis Kanopi &amp; Rangka
               </div>
-              <div className="p-6 flex-1 flex flex-col">
-                <span className="text-xs font-bold tracking-wider text-amber-600 uppercase mb-2">Struktur Rumah</span>
-                <h3 className="text-xl font-bold text-slate-900 mb-2">Kanopi & Atap Baja</h3>
-                <p className="text-slate-600 text-sm leading-relaxed flex-1">
-                  Pemasangan kanopi minimalis, kanopi alderon double layer, tempered glass, solarflat, serta perakitan konstruksi baja ringan untuk carport atau pelindung area luar bangunan.
+              <div style={{ padding: '20px', flex: 1 }}>
+                <span style={{ fontSize: '0.75rem', fontWeight: 'bold', color: '#d97706', textTransform: 'uppercase' }}>Struktur Rumah</span>
+                <h3 style={{ fontSize: '1.3rem', color: '#0f172a', margin: '5px 0 10px 0' }}>Kanopi &amp; Atap Baja</h3>
+                <p style={{ color: '#64748b', fontSize: '0.9rem', lineHeight: '1.6' }}>
+                  Pemasangan kanopi minimalis, kanopi alderon, solarflat, serta perakitan konstruksi baja ringan untuk carport berkualitas tinggi.
                 </p>
               </div>
             </div>
 
             {/* Kartu Produk 3 */}
-            <div className="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden flex flex-col">
-              <div className="h-64 bg-slate-900 flex items-center justify-center p-6">
-                <div className="text-center text-indigo-400 font-bold text-xl">Pagar & Pengaman Rumah</div>
+            <div style={{ 
+              backgroundColor: '#ffffff', 
+              borderRadius: '16px', 
+              boxShadow: '0 4px 6px -1px rgba(0,0,0,0.05)', 
+              overflow: 'hidden',
+              width: '320px',
+              border: '1px solid #f1f5f9',
+              display: 'flex',
+              flexDirection: 'column'
+            }}>
+              <div style={{ height: '220px', backgroundColor: '#0f172a', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#818cf8', fontWeight: 'bold', fontSize: '1.2rem', padding: '20px', textAlign: 'center' }}>
+                Pagar &amp; Pengaman Rumah
               </div>
-              <div className="p-6 flex-1 flex flex-col">
-                <span className="text-xs font-bold tracking-wider text-emerald-600 uppercase mb-2">Keamanan</span>
-                <h3 className="text-xl font-bold text-slate-900 mb-2">Pagar, Railing & Teralis</h3>
-                <p className="text-slate-600 text-sm leading-relaxed flex-1">
-                  Pembuatan pagar dorong minimalis, pintu besi kasa nyamuk, teralis jendela anti-maling, serta railing tangga bermotif modern maupun stainless steel.
+              <div style={{ padding: '20px', flex: 1 }}>
+                <span style={{ fontSize: '0.75rem', fontWeight: 'bold', color: '#059669', textTransform: 'uppercase' }}>Keamanan</span>
+                <h3 style={{ fontSize: '1.3rem', color: '#0f172a', margin: '5px 0 10px 0' }}>Pagar, Railing &amp; Teralis</h3>
+                <p style={{ color: '#64748b', fontSize: '0.9rem', lineHeight: '1.6' }}>
+                  Pembuatan pagar dorong minimalis, pintu besi kasa nyamuk, teralis jendela anti-maling, serta railing tangga bermotif modern.
                 </p>
               </div>
             </div>
@@ -86,25 +138,50 @@ export default function App() {
         </section>
 
         {/* CALL TO ACTION */}
-        <section className="bg-gradient-to-r from-indigo-900 to-slate-900 text-white rounded-3xl p-8 md:p-12 text-center shadow-md">
-          <h3 className="text-2xl md:text-3xl font-bold mb-4">Konsultasi Desain & Survei Lokasi Gratis!</h3>
-          <p className="text-indigo-200 max-w-xl mx-auto mb-8 text-sm md:text-base">
+        <section style={{ 
+          background: 'linear-gradient(135deg, #1e1b4b 0%, #0f172a 100%)', 
+          color: '#ffffff', 
+          borderRadius: '24px', 
+          padding: '40px 20px', 
+          textAlign: 'center',
+          boxShadow: '0 10px 15px -3px rgba(0,0,0,0.1)'
+        }}>
+          <h3 style={{ fontSize: '1.8rem', marginBottom: '10px', fontWight: '700' }}>Konsultasi Desain &amp; Survei Lokasi Gratis!</h3>
+          <p style={{ color: '#c7d2fe', maxWidth: '600px', margin: '0 auto 25px auto', fontSize: '0.95rem', lineHeight: '1.6' }}>
             Punya ide ukuran custom untuk rumah atau kandang peliharaan Anda? Diskusikan rencana anggaran Anda bersama tim ahli kami langsung lewat obrolan WhatsApp.
           </p>
           <a 
             href="https://wa.me/6287881947001" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center bg-emerald-500 hover:bg-emerald-600 text-white font-bold px-8 py-4 rounded-full shadow-lg transition-transform duration-200 hover:-translate-y-0.5 text-base md:text-lg gap-2"
+            style={{ 
+              display: 'inline-block',
+              backgroundColor: '#10b981', 
+              color: '#ffffff', 
+              fontWeight: 'bold', 
+              padding: '14px 32px', 
+              borderRadius: '50px', 
+              textDecoration: 'none',
+              fontSize: '1.1rem',
+              boxShadow: '0 4px 14px rgba(16, 185, 129, 0.4)'
+            }}
           >
-            <span>💬 Hubungi Kami via WhatsApp</span>
+            💬 Hubungi Kami via WhatsApp
           </a>
         </section>
 
       </main>
 
       {/* FOOTER */}
-      <footer className="border-t border-slate-200 bg-white py-6 text-center text-sm text-slate-500">
+      <footer style={{ 
+        borderTop: '1px solid #e2e8f0', 
+        backgroundColor: '#ffffff', 
+        padding: '20px', 
+        textAlign: 'center', 
+        fontSize: '0.85rem', 
+        color: '#94a3b8',
+        marginTop: '40px'
+      }}>
         <p>&copy; {new Date().getFullYear()} Bengkel Las Bercahaya Jakarta. Semua Hak Dilindungi.</p>
       </footer>
     </div>
