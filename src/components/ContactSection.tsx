@@ -90,7 +90,7 @@ export default function ContactSection() {
               Email
             </h3>
             <a
-              href="mailto:info@bengkellasbercahaya.com"
+              href="mailto:tutiendah.blc@gmail.com.com"
               className="text-slate-600 hover:text-indigo-600 font-medium text-base transition-colors"
             >
               info@bengkellasbercahaya.com
@@ -111,7 +111,7 @@ export default function ContactSection() {
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4 text-blue-600" />
                 <span className="text-xs font-bold text-slate-800">
-                  Lokasi: Petukangan Utara, Jakarta Selatan
+                  Lokasi: Kreo, Kota Tangerang
                 </span>
               </div>
               <a
